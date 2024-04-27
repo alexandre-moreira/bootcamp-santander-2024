@@ -26,6 +26,11 @@ public class Estabelecimento {
         atendente.servindoMesa();
         atendente.trocarGas();
 
+        Cliente cliente = new Cliente();
+        cliente.escolherLanche();
+        cliente.fazerPedido();
+        cliente.pagarConta();
+
     }
     
 }
