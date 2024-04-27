@@ -14,6 +14,12 @@ public class Estabelecimento {
         cozinheiro.adicionarLancheNoBalcao();
         cozinheiro.adicionarComboNoBalcao();
 
+        Almoxarife almoxarife = new Almoxarife();
+        almoxarife.controlarEntrada();
+        almoxarife.controlarSaida();
+        almoxarife.entregarIgredientes();
+        almoxarife.trocarGas();
+
     }
     
 }
