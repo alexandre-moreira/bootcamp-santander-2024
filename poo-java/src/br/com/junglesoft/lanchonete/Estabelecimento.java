@@ -20,6 +20,12 @@ public class Estabelecimento {
         almoxarife.entregarIgredientes();
         almoxarife.trocarGas();
 
+        Atendente atendente = new Atendente();
+        atendente.pegarLancheCozinha();
+        atendente.receberPagamento();
+        atendente.servindoMesa();
+        atendente.trocarGas();
+
     }
     
 }
