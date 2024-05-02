@@ -16,3 +16,17 @@
     * removerItem(String nome): Remove um item do carrinho com base o seu nome.
     * calcularValorTotal(): Calcula e retorna o valor do carrinho, levando em consideracao o preco e a quantidade de cada um.
     * exibirItems(): Exibe todos os itens presentes no carinho. mostrando seus nomes. precos e quatidades.
+# Pesquisa em list
+
+## 1. Catálogo de Livros
+    Crie uma classe chamada "CatalogoLivros", que possui uma lista de objetos do tipo "Livro""
+    como atributo. Cada livro possui atributos como titulo, autor e ano de publicacao.
+    Implemente os seguintes métodos:
+
+    * adicionarLivro(String titulo, String autor, int anoPublicacao): Adiciona um livro ao catálogo.
+
+    * pesquisarPorAutor(String autor): Pesquisa livros por autor e retorna uma lista com os livros encontrados.
+
+    * pesquisarPorIntervaloAnos(int anoInicial, int anoFinal): Pesquisa livros publicados em um determinado intervalo de anos e retorna uma lista com os livros encontrados.
+
+    * pesquisarPorTitulo(String): Pesquisa livros por titulo e retorna o primeiro livro encontrado.
