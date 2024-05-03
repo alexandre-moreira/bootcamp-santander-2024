@@ -26,7 +26,18 @@ public class OrdenacaoPessoas {
         return pessoasPorAltura;
     }
 
-    
+    public static void main(String[] args) {
+        OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
+        ordenacaoPessoas.adcionarPessoa("Nome 1", 20, 1.56);
+        ordenacaoPessoas.adcionarPessoa("Nome 2", 30, 1.80);
+        ordenacaoPessoas.adcionarPessoa("Nome 3", 25, 1.70);
+        ordenacaoPessoas.adcionarPessoa("Nome 4", 17, 1.56);
 
-    
+        System.out.println("Ordenar pessoas por idade: ");
+        System.out.println(ordenacaoPessoas.ordenarPorIdade());
+
+        System.out.println("\nOrdenar pessoas por idade: ");
+        System.out.println(ordenacaoPessoas.ordenarPorIdade());
+
+    }
 }
