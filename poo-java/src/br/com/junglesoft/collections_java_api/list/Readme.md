@@ -30,3 +30,12 @@
     * pesquisarPorIntervaloAnos(int anoInicial, int anoFinal): Pesquisa livros publicados em um determinado intervalo de anos e retorna uma lista com os livros encontrados.
 
     * pesquisarPorTitulo(String): Pesquisa livros por titulo e retorna o primeiro livro encontrado.
+
+# Ordenacao em lista
+
+## 1. Ordenacao de Pessoas
+    Crie uma classe chamada "OrdenacaoPessoas", que possui uma lista de objetos do tipo "Pessoa" como atributo. Cada pessoa possui atributos como nome, idade e altura. Implemente os seguintes métodos.
+
+    * adicionarPessoa(String nome, int idade, double altura): Adiciona uma pessoa a lista.
+    * ordenarPorIdade(): Ordena as pessoas por idade usando a interface Comparable.
+    * ordenarPorIdade(): Ordena as pessoas por altura usando um Comparator personalizado.
