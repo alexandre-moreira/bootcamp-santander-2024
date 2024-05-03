@@ -30,7 +30,7 @@ public class CatalogoLivros {
         List<Livro> livrosPorIntervaloAnos = new ArrayList<>();
         if(!livroList.isEmpty()){
             for(Livro l : livroList){
-                if(l.getAnoPublicacao() == anoInicial && l.getAnoPublicacao() <= anoFinal){
+                if(l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal){
                     livrosPorIntervaloAnos.add(l);
                 }
             }
@@ -49,6 +49,25 @@ public class CatalogoLivros {
             }
         }
         return livroPorTitulo;
+    }
+
+    public static void main(String[] args) {
+        CatalogoLivros catalogoLivros = new CatalogoLivros();
+
+        catalogoLivros.adicionarLivro("Livro 1", "Autor 1", 2020);
+        catalogoLivros.adicionarLivro("Livro 1", "Autor 2", 2021);
+        catalogoLivros.adicionarLivro("Livro 2", "Autor 2", 2022);
+        catalogoLivros.adicionarLivro("Livro 3", "Autor 3", 2023);
+        catalogoLivros.adicionarLivro("Livro 4", "Autor 4", 1994);
+
+        System.out.println("Pesquisar por autor:");
+        System.out.println(catalogoLivros.pesquisarPorAutor("Autor 2"));
+
+        System.out.println("Pesquisar por intervalo de anos:");
+        System.out.println(catalogoLivros.pesquisarPorIntervaloAnos(2020, 2022));
+
+        System.out.println("Pesquisar por titulo:");
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Livro 1"));
     }
 
 }
