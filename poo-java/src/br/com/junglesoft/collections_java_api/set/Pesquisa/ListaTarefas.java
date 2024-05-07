@@ -33,7 +33,7 @@ public class ListaTarefas {
         }
     }
 
-    public void exibirTarefa(){
+    public void exibirTarefas(){
         if(!tarefasSet.isEmpty()){
             System.out.println(tarefasSet);
         }else{
@@ -96,6 +96,40 @@ public class ListaTarefas {
         }else{
             tarefasSet.clear();
         }
+     }
+
+     public static void main(String[] args) {
+        //Criando uma instancia da classe ListaTarefas
+        ListaTarefas listaTarefas = new ListaTarefas();
+
+        // Adicionando tarefas a lista
+        listaTarefas.adicionarTarefa("Estudar Java");
+        listaTarefas.adicionarTarefa("Fazer exercicios fisicos");
+        listaTarefas.adicionarTarefa("Organizar a mesa de trabalho");
+        listaTarefas.adicionarTarefa("Ler livro");
+        listaTarefas.adicionarTarefa("Preparar apresetacao");
+
+        // Exibindo as tarefas na lista
+        listaTarefas.exibirTarefas();
+
+        // Removendo uma tarefa
+        listaTarefas.removerTarefa("Ler livro");
+        listaTarefas.exibirTarefas();
+
+        // Contando o numero de tarefas na lista
+        System.out.println("Total de Tarefas: " + listaTarefas.contarTarefas());
+        
+        // Obtendo o numero de tarefas excluidas
+        System.out.println("Tarefas Pendentes: " + listaTarefas.obterTarefasPendentes());
+
+        // Marcando tarefas como pendentes
+        listaTarefas.marcarTarefaPendente("Estudar Java");
+        listaTarefas.exibirTarefas();
+
+        //Limpando a lista de tarefas
+        listaTarefas.limparListaTarefas();
+        System.out.println("Lista de tarefas");
+        listaTarefas.exibirTarefas();
      }
 
     
