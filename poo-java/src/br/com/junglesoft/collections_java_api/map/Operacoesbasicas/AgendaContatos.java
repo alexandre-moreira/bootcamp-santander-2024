@@ -32,4 +32,24 @@ public class AgendaContatos {
         }
         return numeroPorNome;
     }
+
+    public static void main(String[] args) {
+        AgendaContatos agendaContatos = new AgendaContatos();
+
+        agendaContatos.adicionarContato("Alexandre", 123456);
+        agendaContatos.adicionarContato("Alexandre", 5665);
+        agendaContatos.adicionarContato("Alexandre Moreira", 111111111);
+        agendaContatos.adicionarContato("Alexandre DIO", 6549987);
+        agendaContatos.adicionarContato("Maria Silva", 1111111);
+        agendaContatos.adicionarContato("Alexandre", 44444);
+
+        agendaContatos.exibirContatos();
+        
+        agendaContatos.removerContato("Maria Silva");
+        agendaContatos.exibirContatos();
+
+        System.out.println("O numero é: " + agendaContatos.pesquisaPorNome("Alexandre DIO"));
+
+
+    }
 }
