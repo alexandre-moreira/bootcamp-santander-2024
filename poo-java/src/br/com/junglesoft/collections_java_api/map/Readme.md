@@ -35,4 +35,11 @@ Exercicios:
     * obterProdutoMaisBarato(): Retorna o produto mais barato do estoque, ou seja, aquele com menor preco.
 
     * obterProdutoMaiorQuantidadeValorTotalNoEstoque(); Retorna o produto que está em maior quantidade no estoque, considerando o valor total de cada produto(quantidade * preco).
-      
+
+## 2. Contagem de palavras
+    Crie uma classe chamada "ContagemPalavras" que utilize um Map para armazenar as palavras e a quantidade de vezes que cada palavra aparece em um texto. Implemente os seguintes metodos:
+
+    * adicionarPalavras(String palavra, Integer contagem): Adiciona uma palavra a contagem.
+    * removerPalavras(String palavra): Remover uma palavra da contagem, se estiver presente.
+    * exiberContagemPalavras(); Exibe todas as palavras e suas respectivas contagens.
+    * encontrarPalavrasMaisFrequentes(): Encontra a palavra mais frequente no texto e retorna a sua palavra e sua contagem.
