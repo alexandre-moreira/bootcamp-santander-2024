@@ -42,4 +42,17 @@ public class ContagemPalavras {
         return liguagemMaisFrequente;
     }
     
+    public static void main(String[] args) {
+        ContagemPalavras contagemPalavras = new ContagemPalavras();
+
+        contagemPalavras.adicionarPalavras("Java", 2);
+        contagemPalavras.adicionarPalavras("Python", 8);
+        contagemPalavras.adicionarPalavras("JavaScript", 1);
+        contagemPalavras.adicionarPalavras("C#", 6);
+
+        System.out.println("Existem " + contagemPalavras.exibirContagemPalavras() + " palavras");
+
+        String linguagemMaisFrequente = contagemPalavras.encontrarPalavrasMaisFrequente();
+        System.out.println("A linguagem mais frequente é: " + linguagemMaisFrequente);
+    }
 }
