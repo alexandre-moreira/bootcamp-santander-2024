@@ -43,3 +43,12 @@ Exercicios:
     * removerPalavras(String palavra): Remover uma palavra da contagem, se estiver presente.
     * exiberContagemPalavras(); Exibe todas as palavras e suas respectivas contagens.
     * encontrarPalavrasMaisFrequentes(): Encontra a palavra mais frequente no texto e retorna a sua palavra e sua contagem.
+
+# Ordenacao nos Maps.
+
+## 1. Agenda de Eventos
+    Crie uma classe chamada "AgendaEventos" que utilize um Map para armazenar as datas e seus respectivos Eventos. Cada evento é representado por um objeto da classe "Evento", que possui atributos como nome do evento  e o nome da atracao. Implemente os seguintes metodos:
+
+    * adicionarEvento(LocalDate data, String nome, String atracao): Adiciona um evento a agenda.
+    * exibirAgenda(): Exibe a agenda de eventos em ordem crescente de data.
+    * obterProximoEvento(): Retorna o proximo evento que ocorrerá.
