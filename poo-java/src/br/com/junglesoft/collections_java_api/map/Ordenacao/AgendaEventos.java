@@ -1,6 +1,7 @@
 package br.com.junglesoft.collections_java_api.map.Ordenacao;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -41,8 +42,14 @@ public class AgendaEventos {
     public static void main(String[] args) {
         AgendaEventos agendaEventos = new AgendaEventos();
 
+        agendaEventos.adicionarEvento(LocalDate.of(2024, Month.APRIL, 15), "Evento 1", "Atracao 1");
+        agendaEventos.adicionarEvento(LocalDate.of(2024, Month.MAY, 9), "Evento 2", "Atracao 2");
+        agendaEventos.adicionarEvento(LocalDate.of(2024, Month.MAY, 12), "Evento 3", "Atracao 3");
+
+        agendaEventos.exibirAgenda();
+
+        agendaEventos.obterProximoEveto();
 
     }
-
     
 }
