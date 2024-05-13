@@ -7,7 +7,10 @@ package br.com.junglesoft.stream_api_java;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BinaryOperator;
-
+/**
+ * Representa uma operacao que combina dois argumentos do tipo T e retorna um resultado do mesmo tipo T.
+ * É usada para realizar operacoes de reducao em pares de elementos, como somar numeros ou combinar  objetos.
+*/
 public class BinaryOperatorExemplo {
     public static void main(String[] args) {
         
